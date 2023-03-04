@@ -1,22 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 ul,
 li {
-    list-style: none;
-}
+  list-style: none; }
 
 h1,
 h2,
@@ -25,124 +21,104 @@ h4,
 h5,
 h6,
 img {
-    font-weight: inherit;
-    font-size: inherit;
-}
+  font-weight: inherit;
+  font-size: inherit; }
 
 html,
 body {
-    height: 100%;
-    font-size: 21px;
-    font-family: 'PT Sans', sans-serif;
-}
+  height: 100%;
+  font-size: 21px;
+  font-family: 'PT Sans', sans-serif; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0; }
 
 .wrapper {
-    min-width: 100%;
-    overflow: hidden;
-    background-color: #F2F2F2;
-}
+  min-width: 100%;
+  overflow: hidden;
+  background-color: #F2F2F2; }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 50;
-}
-
-.header .header__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50; }
+  .header .header__container {
     height: 56px;
-    background-color: #ffffff;
-}
-
-.header .header__container .header__menu {
-    height: 100%;
-}
-
-.header .header__container .header__navigation {
-    height: inherit;
-}
+    background-color: #ffffff; }
+    .header .header__container .header__menu {
+      height: 100%; }
+    .header .header__container .header__navigation {
+      height: inherit; }
 
 .navigation__item {
-    margin-top: 16px;
-    text-align: center;
-    width: 187px;
-}
-
-.navigation__item.navigation__item--logo {
-    margin-top: 0;
-}
+  margin-top: 16px;
+  text-align: center;
+  width: 187px; }
+  .navigation__item.navigation__item--logo {
+    margin-top: 0; }
 
 .navigation__list {
-    display: flex;
-    height: inherit;
-    justify-content: space-evenly;
-}
+  display: flex;
+  height: inherit;
+  justify-content: space-evenly; }
 
 .navigation__link {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-}
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase; }
 
 .header__logo-tablet {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -31%);
-}
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -31%); }
 
 .intro__body {
-    position: absolute;
-}
+  position: absolute; }
+  .intro__body .intro__heading-text {
+    font-family: 'Bebas Neue', cursive; }
 
 @media screen and (max-width: 1024px) {
-    .navigation__list {
-        justify-content: space-around;
-    }
-}
+  .navigation__list {
+    justify-content: space-around; } }
 
 @media screen and (max-width: 576px) {
-    .header__navigation {
-        display: none;
-    }
-
-    .header__menu-burger {
-        display: block;
-        position: absolute;
-        top: 17px;
-        right: 20px;
-        height: 22px;
-        width: 23px;
-        cursor: pointer;
-        z-index: 50;
-    }
-
+  .header__navigation {
+    display: none; }
+  .header__menu-burger {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    height: 22px;
+    width: 23px;
+    cursor: pointer;
+    z-index: 50; }
     .header__menu-burger span {
-        top: 9px;
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: #81B3D2;
-    }
-
-    .header__menu-burger span:first-child {
-        top: 0;
-    }
-
-    .header__menu-burger span:last-child {
+      top: 9px;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: #81B3D2; }
+      .header__menu-burger span:first-child {
+        top: 0; }
+      .header__menu-burger span:last-child {
         top: auto;
-        bottom: 0;
-    }
-
-    .header__logo-tablet {
-        display: block;
-    }
-}
+        bottom: 0; }
+  .header__logo-tablet {
+    display: block; } }
